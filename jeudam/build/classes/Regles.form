@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jbRetourAccueil" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" alignment="0" pref="653" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="465" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jbRetourAccueil" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="jbRetourAccueil">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Retourner &#xe0; l&apos;accueil"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbRetourAccueilActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Il existe deux types de pi&#xe8;ces : les pions et les dames.&#xa;&#xa;Le premier coup est toujours jou&#xe9; par les blancs. Les adversaires jouent un coup chacun &#xe0; tour de r&#xf4;le avec leurs pi&#xe8;ces.&#xa;&#xa;Un pion se d&#xe9;place obligatoirement vers l&#x2019;avant, en diagonale, d&#x2019;une case sur une case libre de la rang&#xe9;e suivante.&#xa;&#xa;Lorsqu&apos;il atteint la derni&#xe8;re rang&#xe9;e, le pion devient dame. Pour cela, on couronne le pion en pla&#xe7;ant dessus un deuxi&#xe8;me pion de la m&#xea;me couleur.&#xa;&#xa;Une dame doit attendre que l&#x2019;adversaire ait jou&#xe9; au moins une fois avant d&#x2019;entrer en action.&#xa;&#xa;Une dame se d&#xe9;place en arri&#xe8;re ou en avant sur les cases libres successives de la diagonale qu&#x2019;elle occupe. Elle peut donc se poser, au-del&#xe0; de cases libres, sur une case libre &#xe9;loign&#xe9;e.&#xa;&#xa;Pour un joueur &#xe0; qui c&apos;est le tour de jouer, le fait de toucher une de ses pi&#xe8;ces jouables implique l&#x2019;obligation de jouer cette pi&#xe8;ce, pour autant que cela soit possible.&#xa;&#xa;Tant qu&#x2019;une pi&#xe8;ce touch&#xe9;e ou en cours de d&#xe9;placement n&#x2019;a pas &#xe9;t&#xe9; l&#xe2;ch&#xe9;e, il est permis de la poser sur une autre case, pour autant que cela soit possible.&#xa;&#xa;Le joueur qui a le trait et qui d&#xe9;sire replacer correctemment une ou plusieurs pi&#xe8;ces doit le notifier d&#x2019;avance et distinctement &#xe0; l&#x2019;adversaire par la formule &quot;j&#x2019;adoube&quot;.&#xa;&#xa;La prise des pi&#xe8;ces adverse est obligatoire et s&#x2019;effectue aussi bien en avant qu&#x2019;en arri&#xe8;re.&#xa;&#xa;Lorsqu&#x2019;un pion se trouve en pr&#xe9;sence, diagonalement, d&#x2019;une pi&#xe8;ce adverse derri&#xe8;re laquelle se trouve une case libre, il doit obligatoirement sauter par-dessus cette pi&#xe8;ce et occuper la case libre. Cette pi&#xe8;ce adverse est alors enlev&#xe9;e du damier. Cette op&#xe9;ration compl&#xe8;te est la prise par un pion.&#xa;&#xa;Lorsqu&#x2019;une dame se trouve en pr&#xe9;sence sur la m&#xea;me diagonale, directement ou &#xe0; distance, d&#x2019;une pi&#xe8;ce adverse derri&#xe8;re laquelle se trouvent une ou plusieurs cases libres, elle doit obligatoirement passer par-dessus cette pi&#xe8;ce et occuper, au choix, une des cases libres. Cette pi&#xe8;ce est alors enlev&#xe9;e du damier. Cette op&#xe9;ration compl&#xe8;te est la prise par une dame.&#xa;&#xa;Lorsqu&#x2019;au cours d&#x2019;une prise par un pion, celui-ci se trouve &#xe0; nouveau en pr&#xe9;sence, diagonalement, d&#x2019;une pi&#xe8;ce adverse derri&#xe8;re laquelle se trouve une case libre, il doit obligatoirement sauter par-dessus cette seconde pi&#xe8;ce, voire d&#x2019;une troisi&#xe8;me et ainsi de suite, et occuper la case libre se trouvant derri&#xe8;re la derni&#xe8;re pi&#xe8;ce captur&#xe9;e. Les pi&#xe8;ces adverses ainsi captur&#xe9;es sont ensuite enlev&#xe9;es du damier dans l&#x2019;ordre de la prise. Cette op&#xe9;ration compl&#xe8;te est une rafle par un pion.&#xa;&#xa;Lorsqu&#x2019;au cours d&#x2019;une prise par une dame, celle-ci se trouve &#xe0; nouveau en pr&#xe9;sence, sur une m&#xea;me diagonale, d&#x2019;une pi&#xe8;ce adverse derri&#xe8;re laquelle se trouve une ou plusieurs cases libres, elle doit obligatoirement sauter par-dessus cette seconde pi&#xe8;ce, voire d&#x2019;une troisi&#xe8;me et ainsi de suite, et occuper au choix une case libre se trouvant derri&#xe8;re et sur la m&#xea;me diagonale que la derni&#xe8;re pi&#xe8;ce captur&#xe9;e. Les pi&#xe8;ces adverses ainsi captur&#xe9;es sont ensuite enlev&#xe9;es du damier dans l&#x2019;ordre de la prise. Cette op&#xe9;ration compl&#xe8;te est une rafle par une dame.&#xa;&#xa;Au cours d&#x2019;une rafle, il est interdit de passer au-dessus de ses propres pi&#xe8;ces.&#xa;&#xa;Au cours d&#x2019;une rafle, il est permis de passer plusieurs fois sur une m&#xea;me case libre mais il est interdit de passer plus d&#x2019;une fois au-dessus d&#x2019;une m&#xea;me pi&#xe8;ce adverse.&#xa;&#xa;Une rafle doit &#xea;tre clairement indiqu&#xe9;e, pi&#xe8;ce par pi&#xe8;ce, en posant la pi&#xe8;ce preneuse sur la case de saut, le temps d&#x2019;y passer, et en d&#xe9;posant cette pi&#xe8;ce sur la case terminale.&#xa;&#xa;Les pi&#xe8;ces prises ne peuvent &#xea;tre enlev&#xe9;es du damier qu&#x2019;&#xe0; l&#x2019;issue de l&#x2019;ex&#xe9;cution compl&#xe8;te de la rafle.&#xa;&#xa;La prise du plus grand nombre de pi&#xe8;ces est prioritaire, donc obligatoire. Dans ce cas, une dame compte pour une pi&#xe8;ce, tout comme un pion. Elle ne conf&#xe8;re nulle priorit&#xe9; et n&#x2019;impose aucune obligation.&#xa;&#xa;Si les pi&#xe8;ces &#xe0; prendre sont en nombre &#xe9;gal dans deux ou plusieurs possibilit&#xe9;s de prise ou de rafle, le joueur est libre de choisir une de ces possibilit&#xe9;s, soit avec un pion, soit avec une dame.&#xa;&#xa;Un pion qui au cours d&#x2019;une rafle, ne fait que passer sur une des 5 cases de la rang&#xe9;e de base adverse reste un pion lorsque la rafle est termin&#xe9;e.&#xa;&#xa;La fin de partie est consid&#xe9;r&#xe9;e comme &#xe9;gale lorsque la m&#xea;me position se repr&#xe9;sente pour la troisi&#xe8;me fois, le m&#xea;me joueur ayant le trait.&#xa;&#xa;Si, durant 25 coups, il n&apos;y a ni d&#xe9;placement de pion ni prise, la fin de partie est consid&#xe9;r&#xe9;e comme &#xe9;gale.&#xa;&#xa;S&#x2019;il n &apos;y a plus que trois dames, deux dames et un pion, ou une dame et deux pions contre une dame, la fin de partie sera consid&#xe9;r&#xe9;e comme &#xe9;gale lorsque les deux joueurs auront encore jou&#xe9; chacun 16 coups au maximum.&#xa;&#xa;Pour autant qu&#x2019;il n&#x2019;y ait pas de phase de jeu en cours, la fin de partie de deux dames contre une dame, et a fortiori, de une dame contre une dame, sera consid&#xe9;r&#xe9;e &#xe9;gale.&#xa;&#xa;Le gain est obtenu par un joueur lorsque son adversaire :&#xa;&#x9;Abandonne la partie&#xa;&#x9;Se trouve dans l&#x2019;impossibilit&#xe9; de jouer alors qu&#x2019;il a le trait&#xa;&#x9;N&#x2019;a plus de pi&#xe8;ces&#xa;&#xa;L&#x2019;&#xe9;galit&#xe9;, d&#xe9;nomm&#xe9;e aussi remise ou nulle, est obtenue pour chacun des adversaires :&#xa;&#x9;Qui la d&#xe9;clare, de commun accord&#xa;&#x9;Lorsqu&#x2019;aucun des deux ne parvient au gain"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
